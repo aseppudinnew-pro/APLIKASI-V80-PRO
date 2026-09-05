@@ -712,7 +712,7 @@ behavior:"smooth"
 
         <h1>Versi 8.0</h1>
 
-        <p>Update Aplikasi (20052026-0840)</p>
+        
 
     </div>
 </div>
@@ -817,6 +817,240 @@ setTimeout(function(){
 },6000);
 
 </script>
+
+
+<!-- ================================
+     POP-UP DOWNLOAD myROBOT V80
+     ================================ -->
+
+<style>
+  #robotDownloadPopup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  .robot-popup-box {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px 22px 24px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+    animation: robotPopupIn 0.35s ease;
+  }
+
+  @keyframes robotPopupIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .robot-close {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background: #f1f1f1;
+    color: #555;
+    font-size: 25px;
+    line-height: 36px;
+    cursor: pointer;
+  }
+
+  .robot-close:hover {
+    background: #e5e5e5;
+  }
+
+  .robot-icon {
+    width: 75px;
+    height: 75px;
+    margin: 5px auto 15px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #2196f3, #673ab7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+  }
+
+  .robot-popup-box h2 {
+    margin: 5px 0 8px;
+    color: #222;
+    font-size: 24px;
+  }
+
+  .robot-version {
+    display: inline-block;
+    background: #eef4ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+
+  .robot-popup-box p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 8px 0 20px;
+  }
+
+  .robot-download {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 18px;
+    background: #2196f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: 0.2s;
+  }
+
+  .robot-download:hover {
+    background: #1976d2;
+    transform: translateY(-1px);
+  }
+
+  .robot-release {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 18px;
+    background: #f3f4f6;
+    color: #333;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .robot-release:hover {
+    background: #e5e7eb;
+  }
+
+  .robot-later {
+    border: none;
+    background: transparent;
+    color: #777;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .robot-later:hover {
+    color: #222;
+  }
+
+  @media (max-width: 480px) {
+    .robot-popup-box {
+      padding: 25px 18px 20px;
+      border-radius: 18px;
+    }
+
+    .robot-popup-box h2 {
+      font-size: 21px;
+    }
+  }
+</style>
+
+
+<!-- POP-UP -->
+<div id="robotDownloadPopup">
+
+  <div class="robot-popup-box">
+
+    <!-- Tombol Close -->
+    <button
+      class="robot-close"
+      onclick="closeRobotPopup()"
+      aria-label="Tutup">
+      ×
+    </button>
+
+    <!-- Icon -->
+    <div class="robot-icon">
+      V80
+    </div>
+
+    <h2>myROBOT V80</h2>
+
+    <div class="robot-version">
+      AI ROBOT SYSTEM V8 PRO
+    </div>
+
+    <p>
+      Versi terbaru aplikasi myROBOT V80 sudah tersedia.
+      Download aplikasi Android atau lihat halaman release
+      untuk mendapatkan pembaruan terbaru.
+    </p>
+
+    <!-- DOWNLOAD APK -->
+    <a
+      class="robot-download"
+      href="https://github.com/klinikasura/APLIKASI-V80/releases/download/myROBOT-80(20052026-0840)/app-release-20052026-0840.apk"
+      target="_blank"
+      rel="noopener noreferrer">
+      📥 Download Aplikasi Android
+    </a>
+
+    <!-- RELEASE TERBARU -->
+    <a
+      class="robot-release"
+      href="https://github.com/klinikasura/APLIKASI-V80/releases/"
+      target="_blank"
+      rel="noopener noreferrer">
+      🚀 Lihat Rilis Terbaru
+    </a>
+
+    <!-- TUTUP -->
+    <button
+      class="robot-later"
+      onclick="closeRobotPopup()">
+      Nanti saja
+    </button>
+
+  </div>
+
+</div>
+
+
+<script>
+  function closeRobotPopup() {
+    const popup = document.getElementById("robotDownloadPopup");
+
+    if (popup) {
+      popup.style.display = "none";
+    }
+  }
+</script>
+		
 
 <!-- ===================================================== -->
 <!-- ================= END POPUP ========================= -->
