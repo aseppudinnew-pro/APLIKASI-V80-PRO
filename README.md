@@ -28,11 +28,11 @@ rumah sakit.
 
 ### Release Versi Final
 
-https://github.com/klinikasura/APLIKASI-V80/releases/
+https://github.com/aseppudinnew-pro/APLIKASI-V80-PRO/releases
 
 ### Preview Tampilan Aplikasi
 
-https://klinikasura.github.io/APLIKASI-V80/
+https://aseppudinnew-pro.github.io/APLIKASI-V80-PRO
 
 ------------------------------------------------------------------------
 
@@ -55,47 +55,6 @@ https://github.com/klinikasura/APLIKASI-V80/releases/download/myROBOT-80(2005202
 ### AI Robot System Audio
 
 https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/BUILDING/AUDIO.apk
-
-------------------------------------------------------------------------
-
-# 🧩 Widget AI Robot System V80
-
-### 1. AI Hotspot
-
-https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-HOTSPOT/login
-
-### 2. [ROBOT-V80](https://github.com/klinikasura/ROBOT-V80)
-
-https://klinikasura.github.io/ROBOT-V80/
-
-
-### 3. AI Cuaca
-
-https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-CUACA/
-
-### 4. AI Slider
-
-https://klinikasura.github.io/APLIKASI-V80/SLIDER/
-
-
-### 5. [AI-ROBOT-SYSTEM-V80-HOTSPOT](https://github.com/klinikasura/AI-ROBOT-SYSTEM-V80-HOTSPOT)
-
-https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-HOTSPOT/login
-
-
-### 6. [BANK](https://github.com/klinikasura/BANK)
-
-https://klinikasura.github.io/BANK/
-
-
-### 7. [TV](https://github.com/klinikasura/TV)
-
-https://klinikasura.github.io/TV/
-
-
-### 8. [DOWNLOAD](https://github.com/klinikasura/DOWNLOAD)
-
-https://klinikasura.github.io/DOWNLOAD/
 
 ------------------------------------------------------------------------
 
